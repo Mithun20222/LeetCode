@@ -11,6 +11,7 @@
  */
 public class Solution {
     public ListNode detectCycle(ListNode head) {
+        if(head==null) return null;
         HashSet<ListNode> hs = new HashSet<>();
         ListNode curr = head;
         while(curr.next!=null){
